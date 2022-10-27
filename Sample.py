@@ -1,7 +1,7 @@
 import snscrape.modules.twitter as sntwitter
 import pandas as pd
 
-query = "(تسديد قروض) until:2022-06-28 since:2010-06-01"
+query = "(But your kry word) until:2022-06-28 since:2010-06-01"
 tweets = []
 limit = 1000
 
@@ -19,4 +19,4 @@ df = pd.DataFrame(tweets, columns=['Date', 'User', 'Tweet'])
 print(df)
 
 # to save to csv
-df.to_csv('Fraud.csv')
+df.to_csv('File_Name.csv')
